@@ -1,0 +1,19 @@
+{
+  "name": "Colombo Institute of Sales & Distribution,Sales Diploma Sri Lanka, CISD Sri Lanka, sales training Sri Lanka, professional sales education, distribution management courses, sales diploma, sales skills training Colombo, sales career development",
+  "short_name": "CISD",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

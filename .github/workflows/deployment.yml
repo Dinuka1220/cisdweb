@@ -1,0 +1,77 @@
+# GitHub Action Workflow - CISD Website Deployment Dev & Prod
+
+on:
+  pull_request:
+    types:
+    - closed
+    branches:
+    - master
+    - main
+    - development
+  workflow_dispatch:
+
+
+name: 🚀 CISD Deployment 🚀
+
+jobs:
+  dev-deploy:
+    if: github.event.pull_request.merged == true && (contains(github.event.pull_request.title, 'codingcad-deploy-dev') || contains(github.event.pull_request.title, 'codingcad-deploy-prod'))
+
+    name: 🌍 CISD DEV DEPLOY
+    runs-on: ubuntu-latest
+    environment: dev
+
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: ⚙️ Use Node.js 20
+      uses: actions/setup-node@v2
+      with:
+        node-version: "20"
+
+    - name: ⬇️ Install Dependencies
+      run: npm install
+
+    - name: 🔨 Build Project
+      run: npm run build
+
+    - name: 📂 Sync files with cPanel Host File Manager
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ${{ secrets.ftp_server }}
+        username: ${{ secrets.ftp_name }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: ./dist/
+        exclude: .htaccess
+
+  prod-deploy:
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.title, 'codingcad-deploy-prod')
+    needs: dev-deploy
+    name: 🌍 CISD PROD DEPLOY
+    runs-on: ubuntu-latest
+    environment: prod
+
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: ⚙️ Use Node.js 20
+      uses: actions/setup-node@v2
+      with:
+        node-version: "20"
+
+    - name: ⬇️ Install Dependencies
+      run: npm install
+
+    - name: 🔨 Build Project
+      run: npm run build
+
+    - name: 📂 Sync files with cPanel Host File Manager
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ${{ secrets.ftp_server }}
+        username: ${{ secrets.ftp_name }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: ./dist/
+        exclude: .htaccess
