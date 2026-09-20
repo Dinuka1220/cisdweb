@@ -122,15 +122,14 @@ const Footer = () => {
             id="footer"
             ref={footerRef}
             className="absolute w-full overflow-hidden bg-gray-50 z-[9999]"
-            //className="absolute w-full overflow-hidden bg-gray-50 z-[9999] select-none"
-            /*style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}*/
+        //className="absolute w-full overflow-hidden bg-gray-50 z-[9999] select-none"
+        /*style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}*/
         >
             {/* Newsletter Section */}
             <div className="relative w-full px-4 md:px-8 py-5 md:py-8 lg:px-20 lg:py-10 z-40 max-h-[10rem] lg:max-h-[15rem] object-fit">
                 <div
-                    className={`relative bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl transition-all w-[95%] md:w-[80%] lg:w-[70%] mx-auto duration-1000 min-h-[16rem] sm:min-h-[15rem] max-h-[15rem] top-[0rem] lg:top-[3rem] xl:top-[3rem] ${
-                        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-                    }`}
+                    className={`relative bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl transition-all w-[95%] md:w-[80%] lg:w-[70%] mx-auto duration-1000 min-h-[16rem] sm:min-h-[15rem] max-h-[15rem] top-[0rem] lg:top-[3rem] xl:top-[3rem] ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+                        }`}
                     style={{ transitionDelay: '100ms' }}
                 >
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-8 p-8 md:p-12 lg:p-8">
@@ -174,8 +173,8 @@ const Footer = () => {
                                             {loading ? (
                                                 <span className="flex items-center justify-center gap-2">
                                                     <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
-                                                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/>
-                                                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+                                                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                                                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                                                     </svg>
                                                     Sending...
                                                 </span>
@@ -203,15 +202,14 @@ const Footer = () => {
             <div className="relative bg-blue-900 text-white z-0 h-[90rem] md:h-auto object-fit">
                 <div className="pt-32 pb-12 px-4 md:px-8 lg:px-20 w-[95%] md:w-[80%] lg:w-[95%] xl:w-[85%] mx-auto">
                     <div
-                        className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16 transition-all duration-1000 ${
-                            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-                        }`}
+                        className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16 transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+                            }`}
                         style={{ transitionDelay: '300ms' }}
                     >
                         {/* Logo and Address Section */}
                         <div className="space-y-7">
                             <div className="w-52 h-auto flex items-center justify-center mt-10 md:mt-5 lg:mt-0">
-                                <img src={logo} alt="logo"/>
+                                <img src={logo} alt="logo" />
                             </div>
 
                             <div className="space-y-2">
@@ -229,7 +227,7 @@ const Footer = () => {
                                 >
                                     <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
                                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                                         </svg>
                                     </div>
                                 </a>
@@ -241,7 +239,7 @@ const Footer = () => {
                                 >
                                     <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
                                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.267 2.368 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0z"/>
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.267 2.368 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0z" />
                                         </svg>
                                     </div>
                                 </a>
@@ -253,7 +251,7 @@ const Footer = () => {
                                 >
                                     <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
                                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.344 3.608 1.319.975.975 1.257 2.242 1.319 3.608.058 1.266.069 1.646.069 4.84s-.012 3.574-.07 4.84c-.062 1.366-.344 2.633-1.319 3.608-.975.975-2.242 1.257-3.608 1.319-1.266.058-1.646.069-4.84.069s-3.574-.012-4.84-.07c-1.366-.062-2.633-.344-3.608-1.319-.975-.975-1.257-2.242-1.319-3.608-.058-1.266-.069-1.646-.069-4.84s.012-3.574.07-4.84c.062-1.366.344-2.633 1.319-3.608.975-.975 2.242-1.257 3.608-1.319 1.266-.058 1.646-.069 4.84-.069zm0 3.675a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+                                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.344 3.608 1.319.975.975 1.257 2.242 1.319 3.608.058 1.266.069 1.646.069 4.84s-.012 3.574-.07 4.84c-.062 1.366-.344 2.633-1.319 3.608-.975.975-2.242 1.257-3.608 1.319-1.266.058-1.646.069-4.84.069s-3.574-.012-4.84-.07c-1.366-.062-2.633-.344-3.608-1.319-.975-.975-1.257-2.242-1.319-3.608-.058-1.266-.069-1.646-.069-4.84s.012-3.574.07-4.84c.062-1.366.344-2.633 1.319-3.608.975-.975 2.242-1.257 3.608-1.319 1.266-.058 1.646-.069 4.84-.069zm0 3.675a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
                                         </svg>
                                     </div>
                                 </a>
@@ -262,9 +260,8 @@ const Footer = () => {
 
                         {/* Contact Us Section */}
                         <div
-                            className={`space-y-6 transition-all duration-1000 ${
-                                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-                            } z-50`} // or z-0, z-20 depending on layer
+                            className={`space-y-6 transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+                                } z-50`} // or z-0, z-20 depending on layer
 
                         >
                             {/* Contact Title */}
@@ -367,15 +364,15 @@ const Footer = () => {
                                     <h3 className="text-xl font-bold mb-4 text-white">Opening Hours</h3>
                                     <div className="space-y-3 text-sm">
                                         <div className="flex items-center gap-3 text-blue-100">
-                    <span className="flex items-center justify-center w-8 h-8">
-                        <Clock size={20} />
-                    </span>
+                                            <span className="flex items-center justify-center w-8 h-8">
+                                                <Clock size={20} />
+                                            </span>
                                             <p>Monday–Friday : 8.30 am – 5.30 pm</p>
                                         </div>
                                         <div className="flex items-center gap-3 text-blue-100">
-                    <span className="flex items-center justify-center w-8 h-8">
-                        <Clock size={20} />
-                    </span>
+                                            <span className="flex items-center justify-center w-8 h-8">
+                                                <Clock size={20} />
+                                            </span>
                                             <p>Saturday–Sunday : 9.00 am – 5.00 pm</p>
                                         </div>
                                     </div>
@@ -394,9 +391,8 @@ const Footer = () => {
                                 className="block relative cursor-pointer group"
                             >
                                 <img
-                                    className={`w-[16rem] transition-all duration-300 ${
-                                        hovered ? 'scale-110 brightness-110' : 'scale-100'
-                                    }`}
+                                    className={`w-[16rem] transition-all duration-300 ${hovered ? 'scale-110 brightness-110' : 'scale-100'
+                                        }`}
                                     src={xpress}
                                     alt="express"
                                 />
@@ -415,29 +411,28 @@ const Footer = () => {
                                 href="https://myfees.lk/"
                                 target="_blank"
                                 className="w-full bg-green-600 hover:bg-green-700 xl:whitespace-nowrap text-white font-bold py-3 px-3 rounded-lg transition-colors flex items-center justify-center"
-                                /*onClick={(e) => {
-                                    e.preventDefault();
-                                    window.location.href = '/payment';
-                                }}*/
+                            /*onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href = '/payment';
+                            }}*/
                             >
                                 Proceed to Payment
                             </a>
 
                             {/* Alternative responsive fix */}
                             <div className="w-full h-auto flex items-center justify-center mt-4">
-                                <img src={myfess} alt="logo2" className="opacity-1 h-auto w-[46rem] "/>
+                                <img src={myfess} alt="logo2" className="opacity-1 h-auto w-[46rem] " />
                             </div>
                         </div>
 
                         {/* Large Logo Section */}
                         <div className="hidden lg:block">
                             <div
-                                className={`w-full h-86 flex items-start justify-center transition-all duration-1000 absolute -top-[10rem] -right-[16rem] z-50 pointer-events-none ${
-                                    isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-                                }`}
+                                className={`w-full h-86 flex items-start justify-center transition-all duration-1000 absolute -top-[10rem] -right-[16rem] z-50 pointer-events-none ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+                                    }`}
                                 style={{ transitionDelay: '700ms' }}
                             >
-                                <img src={logo2} alt="logo2" className="opacity-30 h-auto w-[46rem] pointer-events-none"/>
+                                <img src={logo2} alt="logo2" className="opacity-30 h-auto w-[46rem] pointer-events-none" />
                             </div>
                         </div>
                     </div>
@@ -465,21 +460,20 @@ const Footer = () => {
 
                     {/* Copyright Section */}
                     <div
-                        className={`absolute bottom-0 left-0 right-0 w-full bg-black border-t border-white border-opacity-20 pt-8 pb-8 text-center transition-all duration-1000 ${
-                            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-                        }`}
-                        style={{transitionDelay: '900ms'}}
+                        className={`absolute bottom-0 left-0 right-0 w-full bg-black border-t border-white border-opacity-20 pt-8 pb-8 text-center transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+                            }`}
+                        style={{ transitionDelay: '900ms' }}
                     >
                         <p className="text-sm opacity-75">
                             ©️ 2026 Colombo Institute of Sales & Distribution. All rights reserved.
                             Designed by{" "}
                             <a
-                                href="https://www.codingcad.com"
+                                href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-blue-400"
                             >
-                                CODINGCAD
+                                PIXERA DIGITAL
                             </a>
                         </p>
                     </div>
